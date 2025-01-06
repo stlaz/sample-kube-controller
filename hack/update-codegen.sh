@@ -27,11 +27,11 @@ THIS_PKG="k8s.io/sample-controller"
 
 kube::codegen::gen_helpers \
     --boilerplate "${SCRIPT_ROOT}/hack/boilerplate.go.txt" \
-    "${SCRIPT_ROOT}/pkg/apis"
+    "${SCRIPT_ROOT}/api"
 
 kube::codegen::gen_client \
     --with-watch \
-    --output-dir "${SCRIPT_ROOT}/pkg/generated" \
-    --output-pkg "${THIS_PKG}/pkg/generated" \
+    --output-dir "${SCRIPT_ROOT}/client" \
+    --output-pkg "${THIS_PKG}/client" \
     --boilerplate "${SCRIPT_ROOT}/hack/boilerplate.go.txt" \
-    "${SCRIPT_ROOT}/pkg/apis"
+    "${SCRIPT_ROOT}/api"
