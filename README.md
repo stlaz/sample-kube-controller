@@ -1,5 +1,15 @@
 # sample-controller
 
+## Fork details
+
+- adds a Makefile with a couple of helpful targets
+- modifies the project structure to be closer to https://github.com/golang-standards/project-layout
+- adds vendor for builds without pulls from the internet/stability
+- adds tooling for automatic CRD generation and uses it
+- adds example Dockerfile and simple test deployment to `kind` via Makefile
+
+## Original description from here
+
 This repository implements a simple controller for watching Foo resources as
 defined with a CustomResourceDefinition (CRD).
 
